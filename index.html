@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello World!!</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário torcedor</h1>
+    </header>
+
+    <form action="pages/cadastrarAction.php" method="post">
+        <label for="fnome"><b>Nome:</b></label><br>
+        <input type="text" id="fnome" name="fnome" required><br>
+
+        <label for="fidade"><b>Idade:</b></label><br>
+        <input type="number" id="fidade" name="fidade" required><br>
+
+        <label for="fcelular"><b>Celular:</b></label><br>
+        <input type="text" id="fcelular" name="fcelular" required><br><br>
+
+        <p><b>Selecione seu time do coração</b></p>
+
+        <label for="ftimes"><b>Times:</b></label>
+        <select name="time" id="ftimes" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="Corinthians">Corinthians</option>
+            <option value="Palmeiras">Palmeiras</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Santos">Santos</option>
+            <option value="Flamengo">Flamengo</option>
+            <option value="Vasco">Vasco</option>
+            <option value="Fluminense">Fluminense</option>
+            <option value="Botafogo">Botafogo</option>
+        </select>
+
+        <br><br>
+
+        <p><b>Você é sócio torcedor?</b></p>
+        <input type="radio" id="sim" name="socio_torcedor" value="SIM" required>
+        <label for="sim"><b>SIM</b></label><br>
+        <input type="radio" id="nao" name="socio_torcedor" value="NÃO">
+        <label for="nao"><b>NÃO</b></label><br>
+
+        <br>
+
+        <p><b>Aceita receber sms de notícias sobre seu time?</b></p>
+        <input type="radio" id="sim_sms" name="sms" value="SIM" required>
+        <label for="sim_sms"><b>SIM</b></label><br>
+        <input type="radio" id="nao_sms" name="sms" value="NÃO">
+        <label for="nao_sms"><b>NÃO</b></label><br>
+
+        <br>
+        <p style="font-size:20px;"><b>Quantas vezes por mês você frequenta estádios?</b></p>
+        <input type="radio" id="tipo1" name="frequencia" value="1vez" required>
+        <label for="tipo1"><b>1 vez por mês</b></label><br>
+        <input type="radio" id="tipo2" name="frequencia" value="2vez">
+        <label for="tipo2"><b>2 vezes por mês</b></label><br>
+        <input type="radio" id="tipo3" name="frequencia" value="3vez">
+        <label for="tipo3"><b>3 vezes por mês</b></label><br>
+        <input type="radio" id="tipo4" name="frequencia" value="maisVez">
+        <label for="tipo4"><b>Mais que 3 vezes ao mês</b></label><br>
+
+        <input type="submit" value="submit">
+    </form>
+    <!-- fim do formulário -->
+</body>
+</html>
